@@ -3,11 +3,17 @@ function takeANumber(katzDeliLine, name) {
   return(`Welcome, ${name}. You are number ${katzDeliLine.length} in line.`);
 }
 
+var i = 0;
+
+function takeANumber (katzDeliLine) {
+  i++;
+  KatzdeliLine.push(i);
+  
+  return ('welcome, you have ticket number' + i);
+}
+
 function nowServing(katzDeliLine) {
   let i = 0;
-  while (i < katzDeliLine.length) {
-    i++;
-  }
   if (katzDeliLine.length === 0) {
     return "There is nobody waiting to be served!";
   }
